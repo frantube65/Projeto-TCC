@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    background-color: #eeeaea;
+}
+
+h1 {
+    text-align: center;
+    margin-block: 4rem;
+    color: rgb(0, 0, 0);
+    
+}
+
+form {
+    display: flex;
+    padding: 2rem 3rem;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #fffdfd;
+    border-radius: 0px;
+    box-shadow: 0px 10px 40px rgb(105, 103, 103);
+    border-radius: 3px;
+    font-weight: bold;
+   
+    
+}
+
+form .email-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form .senha-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-container label, .senha-container label {
+    color: #000000;
+;
+    margin-bottom: .5rem;
+}
+
+.email-container input, .senha-container input {
+    border: 1px solid #a7a5a5;
+    outline: none;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    color: #3f3e3e;
+    border-radius: 3px;
+    max-width: 400px;
+
+}
+
+.senha-container input {
+    margin-bottom: .5rem;
+    
+}
+
+.senha-container .nav-login {
+    display: flex;
+    gap: 190px;
+    
+}
+
+.senha-container .nav-login a {
+    text-decoration: none;
+    color: rgb(63, 62, 62);
+}
+
+.senha-container .nav-login a:hover {
+    color: rgb(0, 0, 0);
+}
+
+#btnlogin{
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-block: 1rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    cursor: pointer;
+    max-width: 400px;
+
+    transition: background-color 0.2s;
+}
+
+#btnlogin:hover{
+    background-color: rgb(36, 35, 35);
+}
+.erro{
+    margin: 5px;
+    color: #d85050;
+    display: none;
+}
+.exibir {
+    display: block !important;
+}
+.senha-container input{
+    margin-bottom: 2px;
+}
+

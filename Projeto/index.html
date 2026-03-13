@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <h1>Faça seu login</h1>
+
+    <form>
+        <div class="email-container">
+            <label for="email">Digite seu email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email">
+            <span class="erro" id="erroEmail">
+                
+            </span>
+        </div>
+
+        <div class="senha-container">
+            <label for="senha">Digite sua senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite a sua senha">
+             <span class="erro" id="erroSenha"></span>
+       
+
+            <div class="nav-login">
+                <a href="cadastro.html">Criar conta</a>
+                <a href="#">Recuperar senha</a>
+            </div>
+        </div>
+        
+        <button id="btnlogin">Entrar</button>
+    </form>
+
+    <script src="validacao.js"></script>
+</body>
+</html>
