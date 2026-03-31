@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #1f1f1f;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.03);
+    background: #2a2a2a;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 14px;
+    opacity: 0.8;
+}
