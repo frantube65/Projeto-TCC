@@ -23,7 +23,13 @@ header {
     padding: 20px;
     border-radius: 10px;
     transition: 0.3s;
+    cursor: pointer;
     text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.03);
+    background: #2a2a2a;
 }
 
 .card h2 {
@@ -33,4 +39,46 @@ header {
 .card p {
     font-size: 14px;
     opacity: 0.8;
+}
+.categorias {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #2c2c2c;
+    padding: 10px;
+}
+
+.categorias a {
+    text-decoration: none;
+    color: white;
+    background-color: #444;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.categorias a:hover {
+    background-color: bisque;
+    color: black;
+}
+.sugestoes {
+    margin-top: 80px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.03); /* Um leve destaque do fundo preto */
+    border-radius: 15px;
+}
+
+.sugestoes-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.mini-card {
+    background: #1a1a1a;
+    padding: 15px;
+    border-left: 3px solid bisque; /* Combina com o seu estilo atual */
+    flex: 1;
+    max-width: 250px;
 }
