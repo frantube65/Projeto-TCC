@@ -16,9 +16,7 @@ const musicas = {
     inspiracao: "audio/inspiracao.mp3"
 };
 
-/* =========================
-   APLICAR TEMA + GÊNERO
-========================= */
+
 function aplicarTudo(){
 
     let genero = localStorage.getItem("genero") || "normal";
@@ -33,9 +31,7 @@ function aplicarTudo(){
     document.body.setAttribute("data-theme", tema);
 }
 
-/* =========================
-   TEXTO (CONTADOR FUNCIONANDO)
-========================= */
+
 function atualizarTexto(){
 
     let texto = editor.value || "";
@@ -55,9 +51,7 @@ function atualizarTexto(){
 
 editor.addEventListener("input", atualizarTexto);
 
-/* =========================
-   TEMA
-========================= */
+
 temaBtn.addEventListener("click", () => {
 
     let atual = localStorage.getItem("tema") || "dark";
@@ -68,9 +62,7 @@ temaBtn.addEventListener("click", () => {
     aplicarTudo();
 });
 
-/* =========================
-   GÊNERO + MÚSICA
-========================= */
+
 generoSelect.addEventListener("change", () => {
 
     let genero = generoSelect.value;
@@ -84,9 +76,7 @@ generoSelect.addEventListener("change", () => {
     }
 });
 
-/* =========================
-   MÚSICA
-========================= */
+
 function tocarMusica(genero){
 
     if(!musicaAtiva) return;
@@ -106,9 +96,7 @@ function tocarMusica(genero){
     });
 }
 
-/* =========================
-   BOTÃO MÚSICA
-========================= */
+
 musicBtn.addEventListener("click", () => {
 
     musicaAtiva = !musicaAtiva;
@@ -129,9 +117,7 @@ musicBtn.addEventListener("click", () => {
     }
 });
 
-/* =========================
-   LOAD
-========================= */
+
 window.addEventListener("load", () => {
 
     let genero = localStorage.getItem("genero") || "normal";
